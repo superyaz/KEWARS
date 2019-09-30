@@ -1,0 +1,32 @@
+{
+  "name": "kewars",
+  "version": "1.0.0",
+  "description": "Página web para tienda de calzado, su nombre \"\"\u001b[DKEWARS\"",
+  "main": "api.js",
+  "scripts": {
+    "start": "node api.js",
+    "dev": "nodemon api.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/superyaz/KEWARS.git"
+  },
+  "author": "@superyaz Company",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/superyaz/KEWARS/issues"
+  },
+  "homepage": "https://github.com/superyaz/KEWARS#readme",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "dotenv-safe": "^8.1.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.3.2",
+    "mongoose": "^5.7.1",
+    "multer": "^1.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  }
+}

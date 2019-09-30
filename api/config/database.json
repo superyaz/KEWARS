@@ -1,0 +1,9 @@
+{
+    "dev": [
+        "mongodb+srv://yacamo:yaz.456@cluster0-5xtyo.mongodb.net/kewars?retryWrites=true&w=majority",
+        {
+            "useNewUrlParser": true,
+            "useUnifiedTopology": true
+        }
+    ]
+}
