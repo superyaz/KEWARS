@@ -2,9 +2,9 @@
   "name": "kewars",
   "version": "1.0.0",
   "description": "Página web para tienda de calzado, su nombre \"\"\u001b[DKEWARS\"",
-  "main": "api.js",
+  "main": "api/api.js",
   "scripts": {
-    "start": "node api.js",
+    "start": "node api/api.js",
     "dev": "nodemon api.js"
   },
   "repository": {
