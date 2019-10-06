@@ -2,43 +2,43 @@
     <div class="d-flex justify-content-center h-100">
         <div class="card">
             <div class="card-header">
-                <h3>Nuevo usuario</h3>
+                <h3>Usuario Nuevo</h3>
             </div>
             <div class="card-body">
-                <form>
+                <form action="/users/register" method="POST">
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fas fa-user"></i></span>
                         </div>
-                        <input type="text" class="form-control" placeholder="nombre">
-                    </div>
-                    <div class="input-group form-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="fas fa-user"></i></span>
-                        </div>
-                        <input type="text" class="form-control" placeholder="apellido">
+                        <input type="text" class="form-control" name="usuario" placeholder="usuario"
+                            value="{{usuario}}">
                     </div>
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fas fa-at"></i></span>
                         </div>
-                        <input type="mail" class="form-control" placeholder="correo">
-                    </div>
-                    <div class="input-group form-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="fas fa-user"></i></span>
-                        </div>
-                        <input type="text" class="form-control" placeholder="usuario">
+                        <input type="mail" class="form-control" name="correo" placeholder="correo" value="{{correo}}">
                     </div>
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fas fa-key"></i></span>
                         </div>
-                        <input type="password" class="form-control" placeholder="contraseña">
+                        <input type="password" class="form-control" name="contrasena" placeholder="contraseña"
+                            value="{{contrasena}}">
+                    </div>
+                    <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                        </div>
+                        <input type="password" class="form-control" name="confirmar_contrasena" placeholder="contraseña"
+                            value="{{confirmar_contrasena}}">
                     </div>
                     <div class="form-group">
-                        <a type="submit" href="board.hbs" value="registrar"
-                            class="btn float-right btn-outline-warning"></a>
+                        <button type="submit" class="btn float-right btn-outline-warning">Registrar</button>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn float-left btn-outline-warning"><a href="/users/login"
+                                style="color:#FFC107;" target="_self">Ingresar</a></button>
                     </div>
                 </form>
             </div>
