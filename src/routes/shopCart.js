@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
+const { isAuthenticated } = require('../helpers/auth');
 
-
-router.get('/shopCart', (req, res) => {
-    res.send('Carrito de compras');
+router.get('/shopCart', isAuthenticated, (req, res) => {
+    res.render('shopCart');
 })
 
 module.exports = router;

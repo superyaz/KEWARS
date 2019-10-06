@@ -12,10 +12,10 @@ router.post('/users/register', async (req, res) => {
     let errors = [];
     const { usuario, correo, contrasena, confirmar_contrasena } = req.body;
     if (usuario.length <= 0) {
-        errors.push({ text: 'Ingrese nombre de usuario' });
+        errors.push({ text: 'Ingrese nombre de usuario.' });
     }
     if (correo.length <= 0) {
-        errors.push({ text: 'Ingrese Correo Electronico' });
+        errors.push({ text: 'Ingrese Correo Electronico.' });
     }
     if (contrasena != confirmar_contrasena) {
         errors.push({ text: 'La contraseña no coincide.' });
@@ -52,11 +52,11 @@ router.post('/users/login', passport.authenticate('local', {
     failureFlash: true
 }));
 
-// router.get('/users/logout', (req, res) => {
-//     req.logout();
-//     req.flash('success_msg', 'You are logged out now.');
-//     res.redirect('/users/signin');
-// });
+router.get('/users/cerrarSesion', (req, res) => {
+    req.logout();
+    req.flash('success_msg', 'Sesión finalizada.');
+    res.redirect('/');
+});
 
 module.exports = router;
 

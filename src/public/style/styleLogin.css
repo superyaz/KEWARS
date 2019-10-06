@@ -22,6 +22,17 @@ body {
     background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
+.footer {
+    color: #000;
+    text-align: center;
+    border-radius: 45px;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+    background-color: rgb(117, 111, 111) !important;
+}
+
 .card-header h3 {
     color: white;
 }
