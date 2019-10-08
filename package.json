@@ -17,20 +17,7 @@
     "url": "https://github.com/superyaz/KEWARS/issues"
 
   },
-  "engines": {
-    "node": ">=8"
-  },
-  "cloud-repo-tools": {
-    "requiresKeyFile": true,
-    "requiresProjectId": true,
-    "test": {
-      "app": {
-        "args": [
-          "src/index.js"
-        ]
-      }
-    }
-  },
+
   "homepage": "https://github.com/superyaz/KEWARS#readme",
   "dependencies": {
     "bcrypt": "^3.0.6",
