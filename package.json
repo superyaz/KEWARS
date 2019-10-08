@@ -2,7 +2,23 @@
   "name": "kewars",
   "version": "1.0.0",
   "description": "Página web para tienda de calzado, su nombre \"\"\u001b[DKEWARS\"",
+  "engines": {
+    "node": ">=8"
+  },
   "main": "src/index.js",
+  "private": true,
+  "cloud-repo-tools": {
+    "requiresKeyFile": true,
+    "requiresProjectId": true,
+    "test": {
+      "app": {
+        "args": [
+          "src/index.js"
+        ],
+        "msg": "Hola cloud"
+      }
+    }
+  },
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js"
