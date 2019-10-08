@@ -71,4 +71,4 @@ app.use(require('./routes/mujerRouter'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 //Server is Listenning
-app.listen(app.get('port'), () => { console.log(`Server on port ${port}`); })
+app.listen(app.get('port'), () => { console.log(`Server on port ${port}`) })
