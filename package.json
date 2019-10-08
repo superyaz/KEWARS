@@ -2,7 +2,7 @@
   "name": "kewars",
   "version": "1.0.0",
   "description": "Página web para tienda de calzado, su nombre \"\"\u001b[DKEWARS\"",
-  "main": "api/api.js",
+  "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js"
