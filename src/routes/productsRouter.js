@@ -8,9 +8,6 @@ router.get('/board', isAuthenticated, (req, res) => {
     res.render('board');
 })
 
-
-
-
 router.post('/board', isAuthenticated, (req, res) => {
 
 });

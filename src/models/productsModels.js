@@ -3,15 +3,15 @@ const mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var productoSchema = new Schema({
+    imagenPath: {
+        type: String,
+        required: true
+    },
     nombre: {
         type: String,
         required: true
     },
     talla: {
-        type: String,
-        required: true
-    },
-    tipo: {
         type: String,
         required: true
     },
@@ -23,15 +23,14 @@ var productoSchema = new Schema({
         type: String,
         required: true
     },
+    precio: {
+        type: Number,
+        required: true
+    },
     fecha: {
         type: Date,
         default: Date.now
     },
-    imagen: {
-        type: String,
-        required: true
-    }
-
 });
 
 module.exports = mongoose.model('Producto', productoSchema);

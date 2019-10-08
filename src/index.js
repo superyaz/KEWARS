@@ -1,6 +1,7 @@
 require('./config/database.json');
 require('./models/database');
 require('./config/passport');
+
 const express = require('express');
 const path = require('path');
 const exphbs = require('express-handlebars');
@@ -8,6 +9,7 @@ const methodOverride = require('method-override');
 const session = require('express-session');
 const flash = require('connect-flash');
 const passport = require('passport');
+const cors = require('cors');
 const port = 3000;
 
 
@@ -61,6 +63,8 @@ app.use(require('./routes/indexRouter'));
 app.use(require('./routes/usersRouter'));
 app.use(require('./routes/productsRouter'));
 app.use(require('./routes/shopCart'));
+app.use(require('./routes/hombreRouter'));
+app.use(require('./routes/mujerRouter'));
 
 //Static Files
 
