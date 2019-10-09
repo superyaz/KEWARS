@@ -6,4 +6,7 @@ router.get('/shopCart', isAuthenticated, (req, res) => {
     res.render('shopCart');
 })
 
+router.get('/mantenimiento'), isAuthenticated, (req, res) => {
+    res.render('mantenimiento');
+}
 module.exports = router;
