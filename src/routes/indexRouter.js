@@ -18,17 +18,20 @@ router.get('/login', (req, res) => {
 
 router.get('/register', (req, res) => {
     res.render('users/register');
-})
+});
 
 router.get('/board', (req, res) => {
     res.render('board');
-})
+});
 
 
 router.get('/shopCart', (req, res) => {
     res.render('shopCart');
-})
+});
 
+router.get('/mantenimiento', (req, res) => {
+    res.render('mantenimiento');
+})
 
 
 module.exports = router;
