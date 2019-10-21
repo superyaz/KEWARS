@@ -4,7 +4,7 @@ Tienda de calzado online para todas las marcas.
 ## Tecnologias utilizadas
 <strong> NodeJS, MongoDB-Atlas, Handlebars </strong>
 
-### Para observar dicho proyecto, por favor ingresa al siguiente link https://kewarss.herokuapp.com/ 
+### Para observar dicho proyecto, por favor ingresa al siguiente link : https://kewarss.herokuapp.com/ 
 
 ## Home
 
