@@ -1,7 +1,10 @@
 # KEWARS
 Tienda de calzado online para todas las marcas.
 
-## Para observar dicha pagina, por favor ingresa al siguiente link https://kewarss.herokuapp.com/ 
+## Tecnologias utilizadas
+<strong> NodeJS, MongoDB-Atlas, Handlebars </strong>
+
+### Para observar dicho proyecto, por favor ingresa al siguiente link https://kewarss.herokuapp.com/ 
 
 ## Home
 
